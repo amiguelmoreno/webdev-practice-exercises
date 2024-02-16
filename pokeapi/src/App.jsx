@@ -20,11 +20,7 @@ const PokemonCard = function ({ pokemonInfo }) {
 export default function App() {
   const [pokemonList, setPokemonList] = useState([]);
   const [currPokemonIdx, setCurrentPokemonIdx] = useState(0);
-  const [pokemonInfo, setPokemonInfo] = useState({
-    name: "",
-    img: "",
-    description: "",
-  });
+  const [pokemonInfo, setPokemonInfo] = useState({});
 
   useEffect(() => {
     async function getList() {
@@ -33,10 +29,6 @@ export default function App() {
     }
     getList();
   }, []);
-
-  function handleChange(e) {
-    setCurrentPokemonIdx(+e.target.value);
-  }
 
   useEffect(() => {
     async function getDescription() {
@@ -54,7 +46,10 @@ export default function App() {
 
   return (
     <>
-      <Select value={currPokemonIdx} onChange={handleChange}>
+      <Select
+        value={currPokemonIdx}
+        onChange={(e) => setCurrentPokemonIdx(+e.target.value)}
+      >
         {pokemonList.map((pokemon, index) => (
           <option key={index} value={index}>
             {pokemon.name}
