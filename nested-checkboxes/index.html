@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+    <script defer type="module" src="/main.js"></script>
+  </head>
+  <body>
+    <h1>Checkboxes Anidados</h1>
+
+    <ul class="check-list">
+      <li>
+        <input type="checkbox" id="item1" />
+        <label for="item1">Elemento 1</label>
+        <ul>
+          <li>
+            <input type="checkbox" id="item1-1" />
+            <label for="item1-1">Elemento 1.1</label>
+            <ul>
+              <li>
+                <input type="checkbox" id="item1-1-1" />
+                <label for="item1-1-1">Elemento 1.1.1</label>
+              </li>
+              <li>
+                <input type="checkbox" id="item1-1-2" />
+                <label for="item1-1-2">Elemento 1.1.2</label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" id="item1-2" />
+            <label for="item1-2">Elemento 1.2</label>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <input type="checkbox" id="item2" />
+        <label for="item2">Elemento 2</label>
+        <ul>
+          <li>
+            <input type="checkbox" id="item2-1" />
+            <label for="item2-1">Elemento 2.1</label>
+            <ul>
+              <li>
+                <input type="checkbox" id="item2-1-1" />
+                <label for="item2-1-1">Elemento 2.1.1</label>
+              </li>
+              <li>
+                <input type="checkbox" id="item2-1-2" />
+                <label for="item2-1-2">Elemento 2.1.2</label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" id="item2-2" />
+            <label for="item2-2">Elemento 2.2</label>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
