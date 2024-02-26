@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+    <script defer type="module" src="/main.js"></script>
+  </head>
+  <body>
+    <div>Countdown Timer</div>
+    <div class="countdown-container">
+      <div id="timer">
+        <div id="hours">00</div>
+        <p>:</p>
+        <div id="min">00</div>
+        <p>:</p>
+        <div id="sec">00</div>
+      </div>
+      <form id="form" action="">
+        <input
+          type="number"
+          id="time-duration"
+          max="10000"
+          placeholder="minutes"
+        />
+        <button>Set</button>
+      </form>
+      <button id="reset">Reset</button>
+      <button id="pause">Pause</button>
+      <button id="start">Start</button>
+    </div>
+  </body>
+</html>
